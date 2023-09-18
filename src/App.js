@@ -6,6 +6,7 @@ import Selectant from './component/select';
 import Formant from './component/form';
 import Tableant from './component/table';
 import Alertant from './component/alert';
+import DatePickerAnt from './component/DatePicker';
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
         <Formant />
         <Tableant />
         <Alertant />
+        <DatePickerAnt />
 
       </header>
     </div>
