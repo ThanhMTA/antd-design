@@ -1,59 +1,84 @@
-import {Table} from 'antd';
+import { Table } from 'antd';
 import './table.css'
+import { useEffect, useState } from 'react';
 
 
-const Tableant =()=>{
-   const data =[
-    {
-        name:'name1',
-        age:10,
-        adress:"Nghe an ",
-        Key:'1'
-    },
-    {
-        name:'name2',
-        age:101,
-        adress:"Nghe an ",
-        Key:'2'
-    },
-    {
-        name:'name3',
-        age:14,
-        adress:"Nghe an ",
-        Key:'3'
-    }
+const Tableant = () => {
+    const [loading, setLoading] = useState(false)
 
-   ]
+    const [dataSource, setDataSource] = useState([])
+    const [page, setPage] = useState(10)
+    const [pageSize, setPageSize] = useState(10)
 
-    const columns=[
+    useEffect(() => {
+        setLoading(true)
+        fetch("https://jsonplaceholder.typicode.com/todos")
+            .then(response => response.json())
+            .then(data => {
+                setDataSource(data)
+            })
+            .catch(err => {
+
+            }).finally(() => {
+                setLoading(false)
+            })
+    }, [])
+    const columns = [
         {
-        title:'Name',
-        dataIndex:'name',
-        key:'key'
+            title: 'ID',
+            dataIndex: 'id',
+            key: '1',
 
-    },
-    {
-        title:'Age',
-        dataIndex:'age',
-        key:'key'
 
-    }, 
-    {
-        title:'Address',
-        dataIndex:'adress',
-        key:'key'
+        },
+        {
+            title: 'User ID',
+            dataIndex: 'userId',
+            key: '2',
+            sorter: (record1, record2) => {
+                return record1.userId > record2.userId
+            }
 
-    }
-]
+        },
+        {
+            title: 'Status',
+            dataIndex: 'completed',
+            key: '3',
+            render: (completed) => {
+                return <p>{completed ? 'Complete' : 'In Progress'}</p>
+            },
+            filters: [
+                { text: 'Complete', value: true },
+                { text: 'In Progress', value: false },
+
+            ],
+            onFilter: (value, record) => {
+                return record.completed === value
+            }
+
+        }
+    ]
     return (
         <>
-        <Table
-        dataSource={data}
-        columns={columns}
+            <Table
+                loading={loading}
+                dataSource={dataSource}
+                columns={columns}
+                pagination={
+                    {
+                        current: page,
+                        pageSize: pageSize,
+                        total: 500,
+                        onChange: (page, pageSize) => {
+                            setPage(page);
+                            setPageSize(pageSize)
+                        }
+                    }
+                }
 
-        >
+            >
 
-        </Table>
+            </Table>
         </>
     )
 }

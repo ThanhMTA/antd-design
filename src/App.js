@@ -14,15 +14,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <ButtonAnt />
-        <InputAnt />
+        {/* <ButtonAnt /> */}
+        {/* <InputAnt />
         <Selectant />
-        <Formant />
+        <Formant /> */}
         <Tableant />
-        <Alertant />
+        {/* <Alertant />
         <DatePickerAnt />
         <Spinant/>
-        <ProgressAnt/>
+        <ProgressAnt/> */}
 
       </header>
     </div>
