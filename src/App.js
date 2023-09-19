@@ -8,6 +8,7 @@ import Tableant from './component/table';
 import Alertant from './component/alert';
 import DatePickerAnt from './component/DatePicker';
 import Spinant from './component/Spin';
+import ProgressAnt from './component/progress';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
         <Alertant />
         <DatePickerAnt />
         <Spinant/>
+        <ProgressAnt/>
 
       </header>
     </div>
