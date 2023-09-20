@@ -9,6 +9,7 @@ import Alertant from './component/alert';
 import DatePickerAnt from './component/DatePicker';
 import Spinant from './component/Spin';
 import ProgressAnt from './component/progress';
+import TableSelectant from './component/table/select';
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
         <DatePickerAnt />
         <Spinant/>
         <ProgressAnt/> */}
+        <TableSelectant/>
 
       </header>
     </div>
