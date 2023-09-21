@@ -10,21 +10,25 @@ import DatePickerAnt from './component/DatePicker';
 import Spinant from './component/Spin';
 import ProgressAnt from './component/progress';
 import TableSelectant from './component/table/select';
+import IconAntd from './component/icon';
+import TableAddant from './component/table/add';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <TableAddant />
+        <IconAntd />
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <ButtonAnt /> */}
-        {/* <InputAnt />
-        <Selectant />
+        <InputAnt />
+        {/*<Selectant />
         <Formant /> */}
         <Tableant />
         {/* <Alertant />
         <DatePickerAnt />
         <Spinant/>
         <ProgressAnt/> */}
-        <TableSelectant/>
+        <TableSelectant />
 
       </header>
     </div>
