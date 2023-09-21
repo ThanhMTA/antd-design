@@ -12,10 +12,12 @@ import ProgressAnt from './component/progress';
 import TableSelectant from './component/table/select';
 import IconAntd from './component/icon';
 import TableAddant from './component/table/add';
+import TableSearchant from './component/table/search';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <TableSearchant/>
         <TableAddant />
         <IconAntd />
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
