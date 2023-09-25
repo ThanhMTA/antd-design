@@ -13,10 +13,17 @@ import TableSelectant from './component/table/select';
 import IconAntd from './component/icon';
 import TableAddant from './component/table/add';
 import TableSearchant from './component/table/search';
+import ThemeAnt from './component/theme';
+import FormValAntd from './component/form/validate';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div>Form</div>
+        <FormValAntd/>
+        <div> theme </div>
+        <ThemeAnt/>
+        <div> search table</div>
         <TableSearchant/>
         <TableAddant />
         <IconAntd />
