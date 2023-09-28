@@ -15,16 +15,19 @@ import TableAddant from './component/table/add';
 import TableSearchant from './component/table/search';
 import ThemeAnt from './component/theme';
 import FormValAntd from './component/form/validate';
+import TablePagination from './component/table/tablepari';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div>phân trang </div>
+        <TablePagination />
         <div>Form</div>
-        <FormValAntd/>
+        <FormValAntd />
         <div> theme </div>
-        <ThemeAnt/>
+        <ThemeAnt />
         <div> search table</div>
-        <TableSearchant/>
+        <TableSearchant />
         <TableAddant />
         <IconAntd />
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
