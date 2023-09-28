@@ -16,10 +16,13 @@ import TableSearchant from './component/table/search';
 import ThemeAnt from './component/theme';
 import FormValAntd from './component/form/validate';
 import TablePagination from './component/table/tablepari';
+import FileUpload from './component/fileupload';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div> upload file</div>
+        <FileUpload/>
         <div>phân trang </div>
         <TablePagination />
         <div>Form</div>
