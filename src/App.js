@@ -18,10 +18,13 @@ import FormValAntd from './component/form/validate';
 import TablePagination from './component/table/tablepari';
 import FileUpload from './component/fileupload';
 import EditTableShell from './component/table/editTableShell';
+import PaginationAntd from './component/pagination';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div>PaginationAntd</div>
+        <PaginationAntd />
         <div>Edit Table Shell</div>
         <EditTableShell />
         <div> upload file</div>
