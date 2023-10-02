@@ -19,10 +19,13 @@ import TablePagination from './component/table/tablepari';
 import FileUpload from './component/fileupload';
 import EditTableShell from './component/table/editTableShell';
 import PaginationAntd from './component/pagination';
+import TypograpyAnt from './component/typography';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div> TypograpyAnt</div>
+        <TypograpyAnt/>
         <div>PaginationAntd</div>
         <PaginationAntd />
         <div>Edit Table Shell</div>
