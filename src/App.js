@@ -20,10 +20,16 @@ import FileUpload from './component/fileupload';
 import EditTableShell from './component/table/editTableShell';
 import PaginationAntd from './component/pagination';
 import TypograpyAnt from './component/typography';
+import DividerAntd from './component/Divider';
+import MenuAnt from './component/menu';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div>Menu</div>
+        <MenuAnt/>
+        <div> DividerAntd</div>
+        <DividerAntd/>
         <div> TypograpyAnt</div>
         <TypograpyAnt/>
         <div>PaginationAntd</div>
