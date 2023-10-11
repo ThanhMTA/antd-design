@@ -23,18 +23,21 @@ import TypograpyAnt from './component/typography';
 import DividerAntd from './component/Divider';
 import MenuAnt from './component/menu';
 import TabsAnt from './component/tabs';
+import AvartarAnt from './component/avatar';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div> Avartar</div>
+        <AvartarAnt />
         <div> Tabs</div>
-        <TabsAnt/>
+        <TabsAnt />
         <div>Menu</div>
-        <MenuAnt/>
+        <MenuAnt />
         <div> DividerAntd</div>
-        <DividerAntd/>
+        <DividerAntd />
         <div> TypograpyAnt</div>
-        <TypograpyAnt/>
+        <TypograpyAnt />
         <div>PaginationAntd</div>
         <PaginationAntd />
         <div>Edit Table Shell</div>
