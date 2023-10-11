@@ -22,10 +22,13 @@ import PaginationAntd from './component/pagination';
 import TypograpyAnt from './component/typography';
 import DividerAntd from './component/Divider';
 import MenuAnt from './component/menu';
+import TabsAnt from './component/tabs';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div> Tabs</div>
+        <TabsAnt/>
         <div>Menu</div>
         <MenuAnt/>
         <div> DividerAntd</div>
